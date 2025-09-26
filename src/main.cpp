@@ -13,7 +13,7 @@ void setup() {
   Serial.begin(115200);   // Start Serial communication
   strip.begin();
   strip.show(); // Initialize all LEDs to 'off'
-  strip.setBrightness(10);  //Set brightness level
+  strip.setBrightness(255);  // Set brightness level 0-255
   delay(1000);            // Give the Serial Monitor time to connect
 }
 
