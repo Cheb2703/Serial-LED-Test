@@ -2,7 +2,7 @@
 #include <Adafruit_NeoPixel.h>
 
 #define LED_PIN     25      // Pin where LED strip is connected
-#define LED_COUNT   60     // Number of LEDs in your strip
+#define LED_COUNT   60     // Number of LEDs in strip
 int R = 0;
 int G = 0;
 int B = 255;
@@ -13,7 +13,7 @@ void setup() {
   Serial.begin(115200);      // Start Serial communication
   strip.begin();
   strip.show();              // Initialize all LEDs to 'off'
-  strip.setBrightness(20);  // Set brightness level 0-255
+  strip.setBrightness(20);   // Set brightness level 0-255
   delay(1000);               // Give the Serial Monitor time to connect
 }
 
@@ -38,10 +38,10 @@ void loop() {
 Serial.println("Done");
   
 
-  /*
+  
   for (int i = 1; i <= 50; i++) {
     Serial.println(i);    // Print number to Serial Monitor
-    delay(100);           // 500 milliseconds delay
+    delay(25);           
   }
-    */
+    
 }
